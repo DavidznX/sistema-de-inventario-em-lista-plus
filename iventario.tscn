@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://diilg1qkdqcty"]
+
+[ext_resource type="Script" uid="uid://ff0t6y28xcx7" path="res://iventario.gd" id="1_t257l"]
+[ext_resource type="Texture2D" uid="uid://b13oxsdfhypct" path="res://maca.png" id="2_vvbvm"]
+
+[node name="inventario" type="Control" unique_id=1159336330]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t257l")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1058311328]
+scale = Vector2(10, 10)
+texture = ExtResource("2_vvbvm")

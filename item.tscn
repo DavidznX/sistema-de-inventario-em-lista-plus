@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dgp77s0rfe8lv"]
+
+[ext_resource type="Script" uid="uid://ceincklcwdv6g" path="res://item.gd" id="1_tnite"]
+[ext_resource type="Texture2D" uid="uid://b13oxsdfhypct" path="res://maca.png" id="2_ttk8k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tnite"]
+
+[node name="Item" type="Node2D" unique_id=1184581927]
+script = ExtResource("1_tnite")
+
+[node name="textura" type="Sprite2D" parent="." unique_id=1084762340]
+scale = Vector2(2, 2)
+texture = ExtResource("2_ttk8k")
+
+[node name="area_interacao" type="Area2D" parent="." unique_id=455719924]
+
+[node name="colisao" type="CollisionShape2D" parent="area_interacao" unique_id=2120351626]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_tnite")

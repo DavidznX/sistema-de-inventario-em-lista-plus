@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://llctpgpbwqdi"]
+
+[ext_resource type="Script" uid="uid://biqvj447f24g8" path="res://Item_data.gd" id="1_c06it"]
+[ext_resource type="Texture2D" uid="uid://b13oxsdfhypct" path="res://maca.png" id="2_fgqvr"]
+
+[resource]
+script = ExtResource("1_c06it")
+textura_item = ExtResource("2_fgqvr")
+nome = "Maca"
+descricao = "uma maca que recupera hp"
+tipo = "consumivel"
+amontuavel = true
+quantidade_max = 16
+metadata/_custom_type_script = "uid://biqvj447f24g8"
