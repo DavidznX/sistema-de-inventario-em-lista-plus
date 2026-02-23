@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://diilg1qkdqcty"]
 
 [ext_resource type="Script" uid="uid://ff0t6y28xcx7" path="res://iventario.gd" id="1_t257l"]
-[ext_resource type="Texture2D" uid="uid://b13oxsdfhypct" path="res://maca.png" id="2_vvbvm"]
+[ext_resource type="PackedScene" uid="uid://b0nqlrin0bvi3" path="res://slot.tscn" id="2_vvbvm"]
 
 [node name="inventario" type="Control" unique_id=1159336330]
 layout_mode = 3
@@ -12,6 +12,36 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_t257l")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1058311328]
-scale = Vector2(10, 10)
-texture = ExtResource("2_vvbvm")
+[node name="background" type="ColorRect" parent="." unique_id=117492102]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.20784314, 0.20784314, 0.20784314, 0.56078434)
+
+[node name="lista_de_itens" type="VBoxContainer" parent="." unique_id=985814122]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 79.99997
+offset_bottom = 148.0
+rotation = -0.0021591985
+scale = Vector2(3, 3)
+theme_override_constants/separation = 27
+
+[node name="slot" parent="lista_de_itens" unique_id=1038102040 instance=ExtResource("2_vvbvm")]
+layout_mode = 2
+
+[node name="slot2" parent="lista_de_itens" unique_id=518269437 instance=ExtResource("2_vvbvm")]
+layout_mode = 2
+
+[node name="slot3" parent="lista_de_itens" unique_id=401390813 instance=ExtResource("2_vvbvm")]
+layout_mode = 2
+
+[node name="slot4" parent="lista_de_itens" unique_id=718810381 instance=ExtResource("2_vvbvm")]
+layout_mode = 2
+
+[node name="slot5" parent="lista_de_itens" unique_id=1721667078 instance=ExtResource("2_vvbvm")]
+layout_mode = 2

@@ -19,7 +19,6 @@ func _physics_process(delta: float) -> void:
 
 
 func abrir_inventario():
-	
 	if inventario.visible == false:
 		inventario.visible = true
 		SPEED = 0
@@ -28,3 +27,5 @@ func abrir_inventario():
 		SPEED = 300
 	
 	
+func captar_item(item):
+	inventario.guardar_item(item)

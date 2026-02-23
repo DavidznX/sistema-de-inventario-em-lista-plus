@@ -9,4 +9,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(4, 4)
 script = ExtResource("1_c24ra")
+
+[node name="background" type="ColorRect" parent="." unique_id=1485322606]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3, 0.66)
+color = Color(0.15487596, 0.154876, 0.15487596, 1)
+
+[node name="nome_item" type="Label" parent="." unique_id=571530003]
+layout_mode = 1
+offset_left = 2.0
+offset_right = 89.0
+offset_bottom = 23.0
+rotation = 0.00088560925
+text = "Nome item"
