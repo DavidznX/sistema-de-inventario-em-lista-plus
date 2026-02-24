@@ -2,6 +2,7 @@ extends Node2D
 
 @export var item_data: Item
 
+
 var player_na_area = false
 var player = null
 
