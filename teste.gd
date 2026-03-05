@@ -1,5 +1,4 @@
-extends Control
-
+extends Node3D
 var inventario = []
 
 @onready var lista_de_itens: VBoxContainer = $lista_de_itens
@@ -7,8 +6,7 @@ var inventario = []
 
 
 func _process(delta: float) -> void:
-	guardar_item('picareta') 
-	listar_os_itens_no_invetario()
+	pass
 	
 func guardar_item(item):
 	inventario.append(item)

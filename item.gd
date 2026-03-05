@@ -9,7 +9,7 @@ var player = null
 func _ready() -> void:
 	$textura.texture = item_data.textura_item
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	if player_na_area == true:
 		print('player_entrou_na_area_item')
 		if Input.is_action_just_pressed('acao'):
