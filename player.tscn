@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dgkdel8pb4bdr" path="res://icon.svg" id="1_8afob"]
 [ext_resource type="Script" uid="uid://dtdlpjab8l5lw" path="res://player.gd" id="1_dovo2"]
-[ext_resource type="PackedScene" uid="uid://diilg1qkdqcty" path="res://iventario.tscn" id="3_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://diilg1qkdqcty" path="res://Controlador_inventario.tscn" id="3_i3pqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
 size = Vector2(128, 128)

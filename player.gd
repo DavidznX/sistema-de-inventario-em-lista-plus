@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 var SPEED = 300.0
-@onready var inventario: Control = $inventario
+@onready var inventario: Node = $controlador_inventario/inventario
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed('inventario'):
@@ -27,5 +27,5 @@ func abrir_inventario():
 		SPEED = 300
 	
 	
-func captar_item(item):
-	inventario.guardar_item(item)
+func captar_item(dados_itens_coletados):
+	inventario.guardar_item(dados_itens_coletados)

@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var item_data: Item
-
+@export var quantidade: int
 
 var player_na_area = false
 var player = null
@@ -13,7 +13,8 @@ func _physics_process(delta: float) -> void:
 	if player_na_area == true:
 		print('player_entrou_na_area_item')
 		if Input.is_action_just_pressed('acao'):
-			player.captar_item(item_data)
+			var dados_itens_coletados = [item_data,quantidade]
+			player.captar_item(dados_itens_coletados)
 			player = null
 			player_na_area =  false
 			queue_free()
