@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dxs1kuc2f8xig"]
+
+[ext_resource type="Script" uid="uid://biqvj447f24g8" path="res://Item_data.gd" id="1_tw5b0"]
+[ext_resource type="Texture2D" uid="uid://dgkdel8pb4bdr" path="res://icon.svg" id="2_lytr3"]
+
+[resource]
+script = ExtResource("1_tw5b0")
+textura_item = ExtResource("2_lytr3")
+nome = "espada"
+descricao = "aaa"
+tipo = "arama"
+quantidade_max = 1
+metadata/_custom_type_script = "uid://biqvj447f24g8"

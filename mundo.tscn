@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://1xgbxlkig8ch" path="res://player.tscn" id="1_6ba58"]
 [ext_resource type="PackedScene" uid="uid://dgp77s0rfe8lv" path="res://Item_interativo.tscn" id="2_fw4w5"]
+[ext_resource type="Resource" uid="uid://dxs1kuc2f8xig" path="res://espada.tres" id="3_aou4a"]
 [ext_resource type="Resource" uid="uid://llctpgpbwqdi" path="res://maca.tres" id="3_otwa2"]
 
 [node name="mundo" type="Node2D" unique_id=443414579]
@@ -12,12 +13,22 @@ position = Vector2(581, 330)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1675213745]
 position = Vector2(577, 326)
 
-[node name="Item2" parent="." unique_id=1184581927 instance=ExtResource("2_fw4w5")]
-position = Vector2(347, 451)
+[node name="Item4" parent="." unique_id=1184581927 instance=ExtResource("2_fw4w5")]
+position = Vector2(367, 440)
+item_data = ExtResource("3_aou4a")
+quantidade = 1
+
+[node name="Item3" parent="." unique_id=917821850 instance=ExtResource("2_fw4w5")]
+position = Vector2(397, 231)
+item_data = ExtResource("3_aou4a")
+quantidade = 1
+
+[node name="Item2" parent="." unique_id=1901502716 instance=ExtResource("2_fw4w5")]
+position = Vector2(549, 522)
 item_data = ExtResource("3_otwa2")
 quantidade = 1
 
 [node name="Item" parent="." unique_id=1383899104 instance=ExtResource("2_fw4w5")]
-position = Vector2(99.51, 330)
+position = Vector2(193, 520)
 item_data = ExtResource("3_otwa2")
 quantidade = 1

@@ -2,7 +2,9 @@ extends CharacterBody2D
 
 
 var SPEED = 300.0
-@onready var inventario: Node = $controlador_inventario/inventario
+@onready var inventario: Node = $inventario
+
+@onready var inventario_control: Control = $inventario/inventario
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed('inventario'):
@@ -19,11 +21,11 @@ func _physics_process(delta: float) -> void:
 
 
 func abrir_inventario():
-	if inventario.visible == false:
-		inventario.visible = true
+	if inventario_control.visible == false:
+		inventario_control.visible = true
 		SPEED = 0
 	else:
-		inventario.visible = false
+		inventario_control.visible = false
 		SPEED = 300
 	
 	

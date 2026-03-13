@@ -17,4 +17,5 @@ texture = ExtResource("1_8afob")
 shape = SubResource("RectangleShape2D_dovo2")
 
 [node name="inventario" parent="." unique_id=1159336330 instance=ExtResource("3_i3pqv")]
-visible = false
+
+[editable path="inventario"]

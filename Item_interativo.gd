@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if player_na_area == true:
-		print('player_entrou_na_area_item')
+		#print('player_entrou_na_area_item')
 		if Input.is_action_just_pressed('acao'):
 			var dados_itens_coletados = [item_data,quantidade]
 			player.captar_item(dados_itens_coletados)

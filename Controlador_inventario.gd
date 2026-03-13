@@ -7,6 +7,7 @@ var inventario = []
 
 func _process(delta: float) -> void:
 	pass
+	#listar_os_itens_no_invetario()
 	
 func guardar_item(dados_itens_coletados):
 	var novo_item_coletado = dados_itens_coletados[0]
@@ -15,18 +16,26 @@ func guardar_item(dados_itens_coletados):
 		for slot in inventario:
 			if slot[0] == novo_item_coletado:
 				slot[1]+=quantidade_novo_item
-				return
 	inventario.append(dados_itens_coletados)
-	print(dados_itens_coletados)	
+	render_inventario()
+	listar_os_itens_no_invetario()
+	print(dados_itens_coletados[0].nome, dados_itens_coletados[1])	
 
 func listar_os_itens_no_invetario():
 	print(inventario)
 
 
-func render_itens():
-	for slot in  inventario:
-		slot_interativo.nome_item = inventario[0]
-		slot_interativo.quantidade = inventario[1]
+func render_inventario():
+	if inventario.size() == 0:
+		return
+	else:
+		var slot = inventario[0]
+		var item = slot[0]
+		var qtd = slot[1]
+		var qtd_convertida = str(qtd)
+		for i in inventario:
+			slot_interativo.nome_item.text = item.nome
+			slot_interativo.quantidade.text =  str(qtd_convertida)
 	
 func jogar_item_fora(item):
 	pass

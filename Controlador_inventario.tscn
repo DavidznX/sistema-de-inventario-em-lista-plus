@@ -7,6 +7,7 @@
 script = ExtResource("1_s2s2v")
 
 [node name="inventario" type="Control" parent="." unique_id=1159336330]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -35,3 +36,5 @@ theme_override_constants/separation = 27
 
 [node name="Slot_interativo" parent="inventario/lista_de_itens" unique_id=1038102040 instance=ExtResource("2_84ubs")]
 layout_mode = 2
+
+[editable path="inventario/lista_de_itens/Slot_interativo"]
